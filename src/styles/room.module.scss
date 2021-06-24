@@ -33,6 +33,16 @@
     > img {
         max-height: 45px;
     }
+
+    > div {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        button {
+            height: 40px;
+        }
+    }
 }
 
 .room-title {
@@ -96,4 +106,8 @@
         font-weight: 500;
         color: #29292e;
     }
+}
+
+.question-list {
+    margin: 32px 0;
 }

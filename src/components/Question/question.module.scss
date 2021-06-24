@@ -1,0 +1,67 @@
+.question {
+    padding: 24px;
+    border-radius: 8px;
+    background-color: #fefefe;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .2);
+
+    & + .question {
+        margin-top: 8px;
+    }
+
+    p {
+        color: #29292e;
+    }
+
+    footer {
+        margin-top: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        button {
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            transition: filter .2s;
+            
+            &:global.like-button {
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                color: #737380;
+                gap: 8px;
+        
+                &.liked {
+                    color: #835afd;
+        
+                    svg path {
+                        stroke: #835afd;
+                    }
+                }
+            }
+        
+            &:hover {
+                filter: brightness(.7);
+            }
+        }
+    }
+}
+
+
+.user-info {
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+    }
+
+    span {
+        margin-left: 8px;
+        font-size: 14px;
+        color: #737380;
+    }
+}
+
