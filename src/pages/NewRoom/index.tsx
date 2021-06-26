@@ -3,9 +3,9 @@ import { useAuth } from '../../hooks/useAuth';
 import { NavLink, useHistory } from 'react-router-dom';
 import illustrationImg from '../../assets/images/illustration.svg';
 import logoImg from '../../assets/images/logo.svg';
-import styles from '../../styles/auth.module.scss';
 import { Button } from '../../components/Button';
 import { ThemeToggler } from '../../components/ThemeToggler';
+import styles from '../../styles/modules/auth.module.scss';
 import { database } from '../../services/firebase';
 
 export default function NewRoom() {

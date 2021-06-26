@@ -10,7 +10,7 @@ import { Button } from '../../components/Button';
 import { RoomCode } from '../../components/RoomCode';
 import { Question } from '../../components/Question';
 import { ThemeToggler } from '../../components/ThemeToggler';
-import styles from '../../styles/room.module.scss';
+import styles from '../../styles/modules/room.module.scss';
 import { database } from '../../services/firebase';
 import ReactModal from 'react-modal';
 

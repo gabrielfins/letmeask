@@ -1,4 +1,4 @@
-@import './colors.scss';
+@import '../colors.scss';
 
 #page-auth {
     height: 100vh;
@@ -82,7 +82,7 @@
             padding: 0 16px;
             border-radius: 8px;
             border: 1px solid  var(--main-separator-color);
-            background: var(--main-input-color);
+            background-color: var(--main-input-color);
             color: var(--main-text-color);
         }
 
