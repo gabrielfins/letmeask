@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import styles from './question.module.scss';
+import styles from './styles.module.scss';
 
 type QuestionProps = {
     content: string;
@@ -21,7 +21,7 @@ export function Question({content, author, children, isAnswered = false, isHighl
                     <img src={ author.avatar } alt={ author.name } />
                     <span>{ author.name }</span>
                 </div>
-                <div>{ children }</div>
+                <div className={styles['question-controls']}>{ children }</div>
             </footer>
         </div>
     );

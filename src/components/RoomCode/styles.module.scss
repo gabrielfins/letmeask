@@ -1,28 +1,36 @@
+@import '../../styles/colors.scss';
+
 .room-code {
     height: 40px;
-    border: 1px solid #835afd;
+    border: 1px solid var(--primary-color);
     border-radius: 8px;
     display: flex;
-    background-color: #ffffff;
+    background-color: var(--main-background-color);
     cursor: pointer;
     overflow: hidden;
+    transition: filter .2s;
 
     div {
         height: 100%;
-        padding: 0 12px;
+        width: 38px;
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #835afd;
+        background-color: var(--primary-color);
     }
 
     span {
-        width: 230px;
+        width: 100%;
         padding: 0 16px 0 12px;
         flex: 1;
         display: block;
         align-self: center;
         font-size: 14px;
         font-weight: 500;
+        color: var(--main-text-color);
+    }
+
+    &:hover {
+        filter: brightness(.85);
     }
 }

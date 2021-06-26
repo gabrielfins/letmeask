@@ -1,0 +1,94 @@
+@import '../../styles/colors.scss';
+
+.question {
+    padding: 24px;
+    border-radius: 8px;
+    background-color: var(--main-input-color);
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .2);
+
+    & + .question {
+        margin-top: 12px;
+    }
+
+    &:global.highlighted {
+        border: 1px solid var(--primary-color);
+        background-color: var(--highlight-color);
+    }
+
+    &:global.answered {
+        background-color: var(--answered-color);
+    }
+
+    p {
+        color: var(--main-text-color);
+    }
+
+    footer {
+        margin-top: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+    }
+
+    span {
+        margin-left: 8px;
+        font-size: 14px;
+        color: var(--secondary-text-color);
+    }
+}
+
+.question-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    span {
+        display: flex;
+        align-items: flex-end;
+        gap: 5px;
+        color: var(--secondary-text-color);
+    }
+
+    button {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        transition: filter .2s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        &:global.like-button {
+            align-items: flex-end;
+            color: var(--secondary-text-color);
+            gap: 5px;
+    
+            &.liked {
+
+                span {
+                    color: var(--primary-color);
+                }
+    
+                svg path {
+                    stroke: var(--primary-color);
+                }
+            }
+        }
+    
+        &:hover {
+            filter: brightness(.7);
+        }
+    }
+}

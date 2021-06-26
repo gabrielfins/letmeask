@@ -5,6 +5,7 @@ import illustrationImg from '../../assets/images/illustration.svg';
 import logoImg from '../../assets/images/logo.svg';
 import styles from '../../styles/auth.module.scss';
 import { Button } from '../../components/Button';
+import { ThemeToggler } from '../../components/ThemeToggler';
 import { database } from '../../services/firebase';
 
 export default function NewRoom() {
@@ -35,6 +36,9 @@ export default function NewRoom() {
                 <p>Tire as dúvidas da sua audiência em tempo real</p>
             </aside>
             <main>
+                <div className={styles['theme-toggler-container']}>
+                    <ThemeToggler />
+                </div>
                 <div className={styles['main-content']}>
                     <img src={ logoImg } alt="Letmeask" />
                     <h2>Criar uma nova sala</h2>

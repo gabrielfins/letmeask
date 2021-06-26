@@ -1,3 +1,5 @@
+@import '../../styles/colors.scss';
+
 .button {
     height: 50px;
     border: 0;
@@ -5,8 +7,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #835afd;
-    color: #ffffff;
+    background-color: var(--primary-color);
+    color: var(--main-background-color);
     padding: 0 32px;
     cursor: pointer;
     transition: filter .2s;
@@ -16,9 +18,9 @@
     }
 
     &:global.outlined {
-        background-color: #ffffff;
-        border: 1px solid #835afd;
-        color: #835afd;
+        background-color: var(--main-background-color);
+        border: 1px solid var(--primary-color);
+        color: var(--primary-color);
     }
 
     &:not(:disabled):hover {

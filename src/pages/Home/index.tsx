@@ -6,6 +6,7 @@ import logoImg from '../../assets/images/logo.svg';
 import googleIconImg from '../../assets/images/google-icon.svg';
 import styles from '../../styles/auth.module.scss';
 import { Button } from '../../components/Button';
+import { ThemeToggler } from '../../components/ThemeToggler';
 import { database } from '../../services/firebase';
 
 export default function Home() {
@@ -49,6 +50,9 @@ export default function Home() {
                 <p>Tire as dúvidas da sua audiência em tempo real</p>
             </aside>
             <main>
+                <div className={styles['theme-toggler-container']}>
+                    <ThemeToggler />
+                </div>
                 <div className={styles['main-content']}>
                     <img src={ logoImg } alt="Letmeask" />
                     <button className={styles['create-room']} onClick={ handleCreateRoom }><img src={ googleIconImg } alt="Logo do Google" />Crie sua sala com o Google</button>
